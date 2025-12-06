@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int T;
-    scanf("%d", &T);
-
-    while (T--) {
-        int X, N;
-        scanf("%d %d", &X, &N);
-
-        // Each test case is worth X/10 points
-        int points_per_case = X / 10;
-
-        // Chef's score = points per case * number of cases passed
-        int score = points_per_case * N;
-
-        printf("%d\n", score);
+    int N, M;
+    scanf("%d %d", &N, &M);
+    float online_cost = N - (0.10 * N);
+    if (online_cost < M)
+    {
+        printf("ONLINE
+");
+    } else if (online_cost > M)
+    {
+        printf("DINING
+");
+    } else
+    {
+        printf("EITHER
+");
     }
-
-    return 0;
+ return 0;
 }

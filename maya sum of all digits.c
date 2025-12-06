@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int T;
-    scanf("%d", &T);
+    int N, sum = 0;
 
-    while (T--) {
-        int X, N;
-        scanf("%d %d", &X, &N);
 
-        // Each test case is worth X/10 points
-        int points_per_case = X / 10;
+    scanf("%d", &N);
 
-        // Chef's score = points per case * number of cases passed
-        int score = points_per_case * N;
-
-        printf("%d\n", score);
+ 
+    while (N > 0)
+    {
+        sum = sum + N % 10;  
+        N = N / 10;        
     }
+
+    
+    printf("%d
+", sum);
 
     return 0;
 }

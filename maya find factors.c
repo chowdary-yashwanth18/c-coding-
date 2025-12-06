@@ -1,21 +1,13 @@
 #include <stdio.h>
-
-int main() {
-    int T;
-    scanf("%d", &T);
-
-    while (T--) {
-        int X, N;
-        scanf("%d %d", &X, &N);
-
-        // Each test case is worth X/10 points
-        int points_per_case = X / 10;
-
-        // Chef's score = points per case * number of cases passed
-        int score = points_per_case * N;
-
-        printf("%d\n", score);
+int main()
+{
+    int N;
+    scanf("%d", &N);
+    for (int i = 1; i <= N; i++)
+    {
+        if (N % i == 0)
+         printf("%d ", i);
+        
     }
-
-    return 0;
+ return 0;
 }
